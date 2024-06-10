@@ -27,19 +27,6 @@ This project is an interactive map designed to visualize earthquake data from th
 3. Click on earthquake markers to view detailed information about each event.
 
 ## Code Snippet Example
-In this project, ChatGPT was utilized to generate specific parts of the code and to debug and optimize the code's functionality. For instance, the following code snippet, which creates circle markers for each earthquake and binds a popup with the corresponding information, was generated with the assistance of ChatGPT:
+In this project, ChatGPT was utilized to generate specific parts of the code and to debug and optimize the code's functionality.
 
-```javascript
-earthquakeFeatures.forEach(earthquake => {
-  const coordinates = earthquake.geometry.coordinates;
-  const properties = earthquake.properties;
-
-  L.circleMarker([coordinates[1], coordinates[0]], {
-    radius: getRadius(properties.mag),
-    fillColor: getColor(coordinates[2]),
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-  }).bindPopup(`<h3>${properties.place}</h3><hr><p>Magnitude: ${properties.mag}</p><p>Depth: ${coordinates[2]} km</p>`).addTo(earthquakes);
-});
+- OpenAi. (n.d.). ChatGPT by OpenAi from https://openai.com/chatgpt
